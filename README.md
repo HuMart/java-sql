@@ -117,3 +117,8 @@ FROM Orders o
   - the `id` should be the primary key for the table.
   - account `name` should be unique.
   - account `budget` is required.
+
+  CREATE TABLE account
+    (user_id INT PRIMARY KEY,
+	 user_name VARCHAR (50) UNIQUE NOT NULL,
+	 budget serial NOT NULL);
